@@ -24,6 +24,8 @@ def menu
 				if @user_arr.include?(ans) == false
 					puts "you entered: #{ans}"
 					@user_arr << ans 
+				else
+					puts "answer already exists"
 				end
 			when "3"
 				@user_arr.each {|all_ans| puts all_ans}
